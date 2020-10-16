@@ -85,6 +85,12 @@ function preencheRelatorio(lista) {
 
     var rel = "";
     var classe = "linhaPar"
+    rel = rel +`<div class="row  ${classe}">
+    <div class="col-2">Data Inicio</div>
+    <div class="col-2">Data Fim</div>
+    <div class="col-4">Nome Feriado</div>
+    <div class="col-4">Nome da Agencia </div>
+    </div>`;
 
 
     for (i = 0; i < lista.length; i++) {
