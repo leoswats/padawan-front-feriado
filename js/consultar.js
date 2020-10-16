@@ -18,8 +18,8 @@ function carregaInfoRelatorio(){
     document.getElementById("infoUser_email").innerHTML = infoUser_email;
     document.getElementById("infoUser_funcional").innerHTML = infoUser_funcional;
     document.getElementById("infoUser_racf").innerHTML = infoUser_racf;
-
-    fetch("http://localhost:8088/agencias")
+    //http://padawan-projeto-feriados.herokuapp.com
+    fetch("http://padawan-projeto-feriados.herokuapp.com/agencias")
        .then(res => res.json())
        .then(lista => preencheComboBox(lista))
 }
@@ -38,7 +38,7 @@ function preencheComboBox(lista){
 
 
 function recuperarRelatorio(){
-    var url = "http://localhost:8088/feriados";
+    var url = "http://padawan-projeto-feriados.herokuapp.com/feriados";
 
     var idAgencia = document.getElementById("txtAgencia").value;
     if (idAgencia > 0){ // filtrei pelo id da agencia  - se for -1 eu recupero todos os feriados (já descrito na url)
@@ -64,7 +64,7 @@ function preencheComboBox(lista) {
 
 
 function recuperarRelatorio() {
-    var url = "http://localhost:8088/feriados";
+    var url = "http://padawan-projeto-feriados.herokuapp.com/feriados";
 
     var idAgencia = document.getElementById("txtAgencia").value;
     if (idAgencia > 0) { // filtrei pelo id da agencia  - se for -1 eu recupero todos os feriados (já descrito na url)

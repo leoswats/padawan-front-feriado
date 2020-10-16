@@ -19,7 +19,7 @@ function carregainfocadastro(){
     document.getElementById("infoUser_funcional").innerHTML = infoUser_funcional;
     document.getElementById("infoUser_racf").innerHTML = infoUser_racf;
 
-    fetch("http://localhost:8088/agencias")
+    fetch("http://padawan-projeto-feriados.herokuapp.com/agencias")
        .then(res => res.json())
        .then(lista => preencheComboBox(lista))
 }
@@ -59,7 +59,7 @@ function cadastrarFeriado(){
         }
     };
 
-    fetch("http://localhost:8088/feriados/novo", cabecalho)
+    fetch("http://padawan-projeto-feriados.herokuapp.com/feriados/novo", cabecalho)
         .then(res => trataResultado(res));
 }
 
