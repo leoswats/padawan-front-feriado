@@ -1,7 +1,7 @@
 function carregainfo(){
     var strUser = localStorage.getItem("ScheduleUSER");
     if (!strUser){  // se as infos do usuário não existirem no LocalStorage, sinal que não foi logado, volta pro INDEX
-        window.location = "login.html";
+        window.location = "/html/login.html";
     }
 
     var user = JSON.parse(strUser); // só tô convertendo de STRING para OBJETO (pra facilitar)
