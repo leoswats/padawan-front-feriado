@@ -47,7 +47,7 @@ function trataResposta(res){
 function logar(objeto){
     var objSTR = JSON.stringify(objeto);
     localStorage.setItem("ScheduleUSER",objSTR);
-    window.location = "index.html";
+    window.location = "/html/index.html";
 }
 
 function submitenter(myfield,e)
