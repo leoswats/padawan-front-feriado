@@ -70,7 +70,7 @@ function trataResultado(res){
     }
     else{
         alert("ERRO ao cadastrar Feriado!");
-        document.getElementById("msgERRO").innerHTML = "Existe erros no formulario de cadastro";
+        document.getElementById("msgERRO").innerHTML = "Favor preencher todos os campos!";
     }
 }
 
