@@ -64,7 +64,7 @@ function preencheComboBox(lista) {
 
 
 function recuperarRelatorio() {
-    var url = "http://padawan-projeto-feriados.herokuapp.com/html/feriados";
+    var url = "http://padawan-projeto-feriados.herokuapp.com/feriados";
 
     var idAgencia = document.getElementById("txtAgencia").value;
     if (idAgencia > 0) { // filtrei pelo id da agencia  - se for -1 eu recupero todos os feriados (já descrito na url)
