@@ -1,7 +1,7 @@
 function carregainfocadastro(){
     var userStr = localStorage.getItem("ScheduleUSER");
     if (!userStr){
-        window.location = "login.html";
+        window.location = "html/login.html";
     }
 
     var user = JSON.parse(userStr); // só tô convertendo de STRING para OBJETO (pra facilitar)
